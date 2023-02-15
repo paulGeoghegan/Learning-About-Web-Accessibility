@@ -1,0 +1,22 @@
+{
+  "name": "learning-about-web-accessibility",
+  "version": "1.0.0",
+  "description": "This project contains the code for my Enterprise Systems Application Development class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulGeoghegan/Learning-About-Web-Accessibility.git"
+  },
+  "author": "Paul Geoghegan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulGeoghegan/Learning-About-Web-Accessibility/issues"
+  },
+  "homepage": "https://github.com/paulGeoghegan/Learning-About-Web-Accessibility#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
