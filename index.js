@@ -14,3 +14,8 @@ app.listen(3000, function() {
 app.get("/",function(req,res) {
 	res.sendFile(__dirname+"/public/home/home.html");
 });
+
+//This serves the learning page
+app.get("/learning",function(req,res) {
+	res.sendFile(__dirname+"/public/learning/learning.html");
+});

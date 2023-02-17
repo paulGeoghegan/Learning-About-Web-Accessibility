@@ -5,6 +5,8 @@ $("#topOfPage").append(`
 		<h1>`+$("title").text()+`</h1>
 		<nav>
 			<a href="/">Home</a>
+			<a href="/learning">Learning</a>
+			<a href="/about">About</a>
 		</nav>
 		</br>
 `);
