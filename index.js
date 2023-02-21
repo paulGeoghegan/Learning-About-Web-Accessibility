@@ -19,3 +19,8 @@ app.get("/",function(req,res) {
 app.get("/learning",function(req,res) {
 	res.sendFile(__dirname+"/public/learning/learning.html");
 });
+
+//This server the images lesson
+app.get("/learning/images", function(req,res) {
+	res.sendFile(__dirname+"/public/learning/lessons/images.html");
+});
