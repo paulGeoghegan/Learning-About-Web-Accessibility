@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title> Images </title>
 	<link rel="stylesheet" type="text/css" href="/styles/generalStyles.css">
@@ -10,11 +10,21 @@
 
 	<div id="middleOfPage">
 		<h1> Learning about accessibility with images </h1>
-		<img src="https://picsum.photos/200">
+		<p> The image below has no alt text so someone using a screen reader wouldn't be able to tell what it is:</p>
+		<img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg" width="20%" height="20%" alt="Unlabeled">
+		<p>This is equivilent to someone putting a blank image on a website and expecting you to know what it is:</p>
+		<img src="https://i.stack.imgur.com/WeyM8.jpg" width="20%" height="20%" alt="A black square">
+		<p> Thats why it's important in order to add alt text you just have to have something like this inside your image tag: </p>
+		<code>src="example.jpg" alt="This is an image"</code>
+		<p>Now we can add some alt text to the original image</p>
+		<img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg" width="20%" height="20%" alt="A fluffy grey and white kitten sitting on a tree stump looking up while surrounded by trees">
+		<p>Now when someone with a screen reader navigates to the image they would hear: A fluffy grey and white kitten sitting on a tree stump looking up while surrounded by trees</p>
+		<p>It's that simple so make sure you remember why it's important</p>
+		<a href="/learning"><input type="button" value="Done"></a>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	<script src="Utilities/topOfPage.js"></script>
+	<script src="/utilities/topOfPage.js"></script>
 
 </body>
 </html>
