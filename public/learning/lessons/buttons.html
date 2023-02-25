@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Accessible Buttons Page </title>
+	<link rel="stylesheet" type="text/css" href="/styles/generalStyles.css">
+</head>
+<body>
+
+	<div id="topOfPage"></div>
+
+	<div id="middleOfPage">
+		<h2>Making buttons accessible</h2>
+		<p>Almost every website you will come across will have buttons but allot of the time they aren't accessible. This is especially tru when the website is using different icons for the buttons but why is this?</p>
+		<p>It's simple when someone adds an icon to a button they don't realise that either the text in the icon is now part of an image which the screen reader can't read or that a screen reader can't tell the user what the image is.</p>
+		<p>There are 2 main ways to fix this:</p>
+		<ol>
+			<li>Using Value
+				<p>This can be used to specify the text on a button like:</p>
+				<code>
+					value="Click Me!"
+				</code></br>
+				<input type="button" value="Click Me!">
+			</li>
+			<li>Using aria-label
+				<p>This will add some text to the button that only the screen reader will read and is usefull when you have an icon and don't want to add any text to the button</p>
+				<code>
+					aria-label="Click Me!"
+				</code></br>
+				<input type="button" aria-label="Click Me!">
+</li>
+		<a href="/learning"><input type="button" value="Done"></a>
+		</ol>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="/utilities/topOfPage.js"></script>
+
+</body>
+</html>

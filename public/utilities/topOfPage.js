@@ -6,7 +6,6 @@ $("#topOfPage").append(`
 		<nav>
 			<a href="/">Home</a>
 			<a href="/learning">Learning</a>
-			<a href="/about">About</a>
 		</nav>
 		</br>
 `);

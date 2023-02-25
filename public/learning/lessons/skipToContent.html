@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Skip To Content Link Page </title>
+	<link rel="stylesheet" type="text/css" href="/styles/generalStyles.css">
+</head>
+<body>
+
+	<div id="topOfPage"></div>
+
+	<div id="middleOfPage">
+		<h2>The secret skip to content link</h2>
+		<p>Something you might not know if you have never used a screen reader is that some websites have a hidden link at the top of the page which is there just for screen reader users</p>
+		<p>This is extremely useful as on a lot of websites they have huge nav bars and a lot of not so useful links and information at the top before you actually get to the content of the page so a screen reader user has to navigate past all of this which can be annoying and time consuming. The fix? The skip to content link.</p>
+		<p> It works by having at least in the case of my websites a div with an id of middleOfPage or something like this. This div is where you will put all of your content for that particular page. After you have that just add a link to the top of your page</a></p>
+		<a href="#topOfPage">Skip To Top</a>
+		<p>This link takes you back to the top of the page since we are already in the middleOfPage div. All the code you need for this is a link with the following:</p>
+		<code>
+			href="#idOfElement"
+		</code>
+		<p>Changing the idOfElement to whatever the id of your element or div is.</p>
+		<p>Another important thing is to make this invisable so that everyone else doesn't have to look at it. The easiest way to do this is the following css:</p>
+		<code>
+			#skipToContent{font-size: 0;}
+		</code>
+		<p>This will require that you give your element the same id as you reference in your css but once you have done that it should be working.</p>
+		<a href="/learning"><input type="button" value="Done"></a>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="/utilities/topOfPage.js"></script>
+
+</body>
+</html>

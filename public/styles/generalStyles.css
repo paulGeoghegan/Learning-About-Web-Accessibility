@@ -1,4 +1,23 @@
 
+body{
+	background-color: lightgray;
+}
+
 h1{
 	text-align: center;
 }
+
+nav{
+	background-color: navy;
+	padding: 1%;
+}
+
+nav a{
+	color: lightgray;
+	margin-right: 1%;
+}
+
+#skipToContent{
+	font-size: 0;
+}
+

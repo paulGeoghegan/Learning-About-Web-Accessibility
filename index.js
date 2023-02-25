@@ -20,7 +20,22 @@ app.get("/learning",function(req,res) {
 	res.sendFile(__dirname+"/public/learning/learning.html");
 });
 
-//This server the images lesson
+//This serves the intro lesson
+app.get("/learning/intro",function(req,res) {
+	res.sendFile(__dirname+"/public/learning/lessons/intro.html");
+});
+
+//This serves the buttons lesson
+app.get("/learning/buttons",function(req,res) {
+	res.sendFile(__dirname+"/public/learning/lessons/buttons.html");
+});
+
+//This serves the images lesson
 app.get("/learning/images", function(req,res) {
 	res.sendFile(__dirname+"/public/learning/lessons/images.html");
+});
+
+//This serves the skip to content lesson
+app.get("/learning/skipToContent",function(req,res) {
+	res.sendFile(__dirname+"/public/learning/lessons/skipToContent.html");
 });
